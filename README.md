@@ -123,7 +123,8 @@ abTest.fastFetchABTest({ expId: '523570893788557370',callBack:(data)=>{
            	 }
             根据variableValue做AB。
     ***/
-    ```
+    ``` 
+  
 ## 一、h5对接 （未测试）
 ### 1、已经集成神策SDK项目接入
 #### 参数说明：
@@ -137,9 +138,10 @@ interface AbTestSdkOptions {
   authType: "jwt" | "token";	//鉴权方式     token|jwt
   requestFn: (url: string, params: object) => Promise<any>; //请求实例  返回promise对象
 }
-```
+``` 
+	
 #### 接入示例与小程序一致引入文件不同：
-    ``` 
+``` 
     import AbTestSdk from 'ab-test-sdk/dist/h5
 ```
 ### 2、未集成神策SDK项目接入
