@@ -112,7 +112,7 @@ abTest.fastFetchABTest({ expId: '523570893788557370' }).then((data)=>{
 abTest.fastFetchABTest({ expId: '523570893788557370',callBack:(data)=>{
 	console.log(data)
 } })
-     /***data={  
+     // data={  
                 appId: "522065064467890257" ,
                 expId: "523570893788557370" ,
                 groupId: "523570893788557368",
@@ -122,9 +122,10 @@ abTest.fastFetchABTest({ expId: '523570893788557370',callBack:(data)=>{
                 variableValue: "left"
            	 }
             根据variableValue做AB。
-    ***/
-    ``` 
-  
+    
+    
+```   
+
 ## 一、h5对接 （未测试）
 ### 1、已经集成神策SDK项目接入
 #### 参数说明：
