@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div id='btn'>点击事件</div>
+    <script type="text/javascript">
+        // console.log(AbText)
+
+
+        var dom = document.getElementById('btn')
+        dom.addEventListener('click', function () {
+
+        })    
+    </script>
+
+</body>
+<script>
+    const AbText = new AbTestSdk({
+        env: 'development',
+        sensorsOptions: {
+            show_log: true,
+            heatmap: {
+                //是否开启点击图，default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭。
+                clickmap: "default",
+                //是否开启触达注意力图，not_collect 表示关闭，不会自动采集 $WebStay 事件，可以设置 'default' 表示开启。
+                scroll_notice_map: "not_collect",
+                collect_tags: {
+                    div: true,
+                },
+            },
+        },
+    });
+</script>
+
+</html>
